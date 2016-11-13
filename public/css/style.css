@@ -1,8 +1,91 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 12px/1.5 "微软雅黑","Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"宋体";
+
+
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto 0 auto;
+  background-color: #ededed;
 }
 
-a {
-  color: #00B7FF;
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* head */
+.head-wrapper {
+    height: 60px;
+}
+
+.head-wrapper .bg {
+    position: absolute;
+    height: 60px;
+    left: 0;
+    right: 0;
+
+    z-index: -1;
+    background-color: #fff;
+    border-bottom: 2px solid #eee;
+}
+
+.head-wrapper .logo {
+    display: inline-block;
+    position: relative;
+    height: 70%;
+    top: 15%;
+    margin-left: 30px;
+}
+
+.head-wrapper ul {
+    display: block;
+    margin-right: 30px;
+
+    float: right;
+}
+
+.head-wrapper ul li {
+    display: inline-block;
+    margin-left: 50px;
+    height: 60px;
+    box-sizing: border-box;
+    transition: .1s;
+    border-bottom: 0 solid #eee;
+}
+
+.head-wrapper ul li.active{
+    border-bottom: 3px solid #0f8dd0 !important;
+}
+
+.head-wrapper ul li.active >  h3 a{
+    color: #77b6d6;
+}
+
+.head-wrapper ul li:hover {
+    border-bottom: 3px solid #0f8dd0;
+}
+
+.head-wrapper ul li:hover > h3 a {
+    color: #77b6d6;
+}
+
+.head-wrapper ul li h3 {
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
+}
+
+.head-wrapper ul li h3 a {
+    color: #888;
+    text-decoration: none;
+}
+
+.body {
+    height: 1000px;
 }
