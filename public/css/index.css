@@ -106,14 +106,13 @@
     width: 150px;
     height: 65px;
 
-    -webkit-transition: all .2s ease-out;
-    transition: all .2s ease-out;
     float: left;
     background: #fff;
+    border-left: 1px solid rgba(0,0,0,.1);
 }
 
 .coop-box ul li::before {
-    content: "";
+    /*content: "";*/
     display: block;
     position: absolute;
     top: 0;
@@ -123,21 +122,25 @@
     border-left: 1px solid rgba(0,0,0,.1);
 }
 
-.coop-box ul li:hover {
+.coop-box ul li .logo-list:hover {
     opacity: 1;
     visibility: visible;
-    box-shadow: 0 0 40px rgba(0,0,0,.1) inset;
+    box-shadow: 0 0 30px rgba(0,0,0,.1) inset;
 }
 
 .coop-box ul li .logo-list {
     display: block;
     width: 100%;
     height: 100%;
+
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
 }
-/*
+
 .logo-list.l-1 {
     background: url(/img/logo-list.png) 0px -10px;
 }
+/*
 .logo-list.l-2 {
     background: url(/img/logo-list.png) -160px -10px;
 }
