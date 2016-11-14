@@ -86,6 +86,30 @@ li {
     text-decoration: none;
 }
 
-.body {
-    height: 1000px;
+
+
+/* foot */
+.foot-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #444;
+    text-align: center;
+    color: #bfbfbf;
+    padding: 20px;
+}
+
+
+
+@media screen and (max-width: 450px) {
+
+    .head-wrapper ul {
+        display: none;
+    }
+    .head-wrapper {
+        text-align: center;
+    }
+    .head-wrapper .logo {
+        margin-left: 0;
+    }
 }
