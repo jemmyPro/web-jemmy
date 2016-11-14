@@ -108,8 +108,12 @@ li {
     }
     .head-wrapper {
         text-align: center;
+        height: 3em;
     }
     .head-wrapper .logo {
         margin-left: 0;
+    }
+    .foot-wrapper{
+        display: none;
     }
 }
