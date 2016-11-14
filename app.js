@@ -2,7 +2,8 @@
 
 // 标准库依赖
 var fs      = require('fs'),
-    path    = require('path');
+    path    = require('path'),
+    favicon = require('serve-favicon');
 // 第三方库依赖
 var express = require('express'),
     logger  = require('morgan'),
@@ -18,6 +19,7 @@ app.use(logger('dev'));
 
 // static file
 app.use(express.static(path.join(__dirname, 'public'), {maxAge: 86400000}));
+app.use(favicon(__dirname + '/favicon.ico'));
 
 // vies engine
 app.set('view engine', 'hbs');
