@@ -76,6 +76,10 @@
 }
 
 @media screen and (max-width: 450px) {
+    .coop-box {
+        border-radius: 0;
+        overflow: hidden;
+    }
     .coop-box ul li {
         width: 33.2%;
     }

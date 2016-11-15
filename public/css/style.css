@@ -32,14 +32,15 @@ li {
 
     z-index: -1;
     background-color: #fff;
-    border-bottom: 2px solid #eee;
+    /*border-bottom: 2px solid #eee;*/
+    box-shadow: 0 5px 5px rgba(0,0,0,.1);
 }
 
 .head-wrapper .logo {
     display: inline-block;
     position: relative;
-    height: 80%;
-    top: 10%;
+    height: 73%;
+    top: 13.5%;
     margin-left: 30px;
 }
 
@@ -60,11 +61,11 @@ li {
 }
 
 .head-wrapper ul li.active{
-    border-bottom: 3px solid #0f8dd0 !important;
+    border-bottom: 3px solid #0296d9 !important;
 }
 
 .head-wrapper ul li.active >  h3 a{
-    color: #77b6d6;
+    color: #0296d9;
 }
 
 .head-wrapper ul li:hover {
@@ -72,7 +73,7 @@ li {
 }
 
 .head-wrapper ul li:hover > h3 a {
-    color: #77b6d6;
+    color: #0296d9;
 }
 
 .head-wrapper ul li h3 {
@@ -115,5 +116,8 @@ li {
     }
     .foot-wrapper{
         display: none;
+    }
+    .head-wrapper .bg {
+        height: 3em;
     }
 }
