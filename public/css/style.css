@@ -94,6 +94,7 @@ li {
     position: absolute;
     left: 0;
     right: 0;
+    bottom: 0;
     background-color: #444;
     text-align: center;
     color: #bfbfbf;
