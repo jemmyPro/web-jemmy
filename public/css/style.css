@@ -60,11 +60,11 @@ li {
     border-bottom: 0 solid #eee;
 }
 
-.head-wrapper ul li.active{
+.head-wrapper ul li.active {
     border-bottom: 3px solid #0296d9 !important;
 }
 
-.head-wrapper ul li.active >  h3 a{
+.head-wrapper ul li.active > a {
     color: #0296d9;
 }
 
@@ -72,7 +72,7 @@ li {
     border-bottom: 3px solid #0f8dd0;
 }
 
-.head-wrapper ul li:hover > h3 a {
+.head-wrapper ul li:hover > a {
     color: #0296d9;
 }
 
@@ -82,7 +82,7 @@ li {
     margin: 0;
 }
 
-.head-wrapper ul li h3 a {
+.head-wrapper ul li a {
     color: #888;
     text-decoration: none;
 }
