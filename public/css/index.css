@@ -78,6 +78,39 @@
     box-shadow: 0 0 30px rgba(0,0,0,.2) inset;
 }
 
+.strengths {
+    margin: 0 auto 0 auto;
+    width: 70%;
+}
+
+.strengths h1 {
+    color: #888;
+    margin-bottom: 50px;
+}
+
+.strengths li img {
+    width: 8%;
+    vertical-align: top;
+}
+
+.strengths li .info {
+    display: inline-block;
+    width: 85%;
+    margin-left: 3%
+}
+
+.strengths li .info h2 {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid;
+}
+
+.strengths li .info p {
+    margin: 0;
+}
+
 @media screen and (max-width: 450px) {
     .coop-box {
         border-radius: 0;
