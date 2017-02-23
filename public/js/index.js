@@ -22,8 +22,26 @@ window.onload = function () {
     //     imgbox.style.transform = '';
     // }
 
+    // auto the position of the footer
     var foot = document.getElementsByClassName('foot-wrapper')[0];
     if (foot.offsetTop < window.innerHeight) {
         foot.style.bottom = '0';
+    }
+
+    //show the coop
+    var image = new Image();
+    image.addEventListener('load', showImgOfCoop);
+    image.src = 'img/logos/coop.png';
+    function showImgOfCoop() {
+        var canvasList = document.getElementById('coopList').getElementsByTagName('canvas');
+        var width = 160;
+            height = 50;
+
+        for (var i = 0, len = canvasList.length; i < len; i++) {
+            var context = canvasList[i].getContext("2d");
+            var sXPot = i%6 * 160;
+            var sYPot = parseInt(i/6) * 50;
+            context.drawImage(image, sXPot, sYPot, width, height, 0, 0, width, height);
+        }
     }
 }
