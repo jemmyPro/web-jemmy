@@ -84,24 +84,24 @@
 }
 
 .strengths h1 {
-    color: #777;
+    color: #444;
     margin-bottom: 50px;
 }
 
 .strengths li {
-    margin-bottom: 5%;
+    margin-bottom: 8%;
 }
 
 .strengths li img {
     width: 10%;
     max-width: 45px;
+    margin-top: 20px;
     vertical-align: top;
 }
 
 .strengths li .info {
     display: inline-block;
-    width: 85%;
-    margin-left: 3%
+    margin-left: 8%;
 }
 
 .strengths li .info h2 {
