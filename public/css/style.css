@@ -88,8 +88,6 @@ li {
     text-decoration: none;
 }
 
-
-
 /* foot */
 .foot-wrapper {
     position: absolute;
@@ -99,9 +97,8 @@ li {
     text-align: center;
     color: #bfbfbf;
     padding: 20px;
+    font-size: 13px;
 }
-
-
 
 @media screen and (max-width: 450px) {
 
