@@ -55,11 +55,13 @@ li {
 
 .head-wrapper ul li {
     display: inline-block;
-    margin-left: 50px;
     height: 60px;
     box-sizing: border-box;
     transition: .1s;
     border-bottom: 0 solid #eee;
+}
+.nav + .nav {
+    margin-left: 25px;
 }
 
 .head-wrapper ul li.active {
@@ -101,8 +103,7 @@ li {
     font-size: 13px;
 }
 
-@media screen and (max-width: 450px) {
-
+@media screen and (max-width: 480px) {
     .head-wrapper ul {
         display: none;
     }
