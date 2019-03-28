@@ -1,14 +1,24 @@
 (function () {
     // auto the position of the footer
-    var foot = document.getElementsByClassName('foot-wrapper')[0];
-    if (foot.offsetTop < window.innerHeight) {
-        foot.style.bottom = '0';
+    function autoFiexd() {
+        var foot = document.getElementsByClassName('foot-wrapper')[0];
+        if ((document.body.offsetHeight + 80) < window.innerHeight) foot.style.bottom = '0';
+        else foot.style.bottom = '';
     }
+    autoFiexd();
+
+    function debounce(t, fn) {
+        var s = '';
+        return function () {
+            if (s) clearTimeout(s);
+            s = setTimeout(fn, t);
+        }
+    }
+    window.addEventListener('resize', debounce(100, autoFiexd))
 })();
 
 
 window.onload = function () {
-
     /* img animation */
     /*var imgbox = document.getElementsByClassName('img-box')[0];
     var widthOfBox = imgbox.clientWidth;
@@ -37,7 +47,7 @@ window.onload = function () {
     image.src = 'img/logos/coop.png';
     function showImgOfCoop() {
         var canvasList = document.getElementById('coopList').getElementsByTagName('canvas');
-        var width = 160;
+        var width = 160,
             height = 50;
 
         for (var i = 0, len = canvasList.length; i < len; i++) {
