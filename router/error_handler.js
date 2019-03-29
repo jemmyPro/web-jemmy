@@ -2,7 +2,6 @@
 
 var util = require('util');
 
-// catch 404 and forward to error handler
 function handler404(req, res, next) {
     var error = new Error('Not Found: "' + req.originalUrl + '"');
     error.status = 404;
@@ -29,7 +28,7 @@ process.on('uncaughtException', function (error) {
     dump(error);
 });
 
-function dump (error) {
+function dump(error) {
     if (typeof error === 'object') {
         if (error.message) {
             console.error('%s: %s', error.name ? error.name : 'ERROR', error.message);
@@ -53,12 +52,20 @@ function dump (error) {
     }
 };
 
-// > var missingParameter = generate(400, 100102, 'Missing parameter:');
-//
-// > missingParameter(['phone', 'email']); or
-// > missingParameter('phone', 'email');
-// { [Error: Missing parameter: phone email] status: 400, code: 100102 }
-function generate (httpStatus, errorCode, message, isWarning) {
+/**
+ * @param {Number} httpStatus
+ * @param {Number} errorCode
+ * @param {String} message
+ * @param {Boolean} isWarning
+ * eg.
+ * var missingParameter = generate(400, 100102, 'Missing parameter:');
+ * missingParameter(['phone', 'email']);
+ * or
+ * missingParameter('phone', 'email');
+ *
+ * {[Error: Missing parameter: phone email] status: 400, code: 100102}
+ */
+function generate(httpStatus, errorCode, message, isWarning) {
     return function errorAPI() {
         var params = [message];
         var args = Array.prototype.slice.call(arguments);

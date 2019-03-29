@@ -1,16 +1,14 @@
 'use strict';
 
 // 标准库依赖
-var fs      = require('fs'),
-    path    = require('path'),
+var path    = require('path'),
     favicon = require('serve-favicon');
 // 第三方库依赖
 var express = require('express'),
-    logger  = require('morgan'),
-    hbs     = require('hbs');
+    logger  = require('morgan');
 // 自身依赖
 var router  = require('./router'),
-	config  = require('./config');
+	  config  = require('./config');
 
 var app     = express();
 
