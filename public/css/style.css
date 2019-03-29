@@ -23,6 +23,7 @@ li {
 /* head */
 .head-wrapper {
     height: 60px;
+    overflow: hidden;
 }
 
 .head-wrapper .bg {
